@@ -1,0 +1,139 @@
+* {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  padding-top: 3px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/starry-night.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container_grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25vw 1vw 44vw 30vw;
+  grid-template-rows: 10vh 8vh 84vh;
+  grid-template-areas: "a a b b" "c c c c" "e e e e" "f f f f";
+}
+
+.container_heading {
+  grid-area: a;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container_button {
+  grid-area: b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.921);
+  padding: 30px;
+}
+
+.button {
+  background-color: transparent;
+  border: 0.7px solid white;
+  color: white;
+  border-radius: 3px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+  color: rebeccapurple;
+}
+
+.container_menu {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: fixed rgba(0, 0, 0, 0.457);
+  background-size: cover;
+  border-radius: 6px;
+}
+.container_menu a {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: large;
+}
+.container_menu a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+  color: rebeccapurple;
+}
+
+.container_para {
+  grid-area: e;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  text-align: center;
+  font-weight: lighter;
+}
+.container_para_content {
+  text-align: center;
+}
+.container_para_content__content-heading {
+  font-weight: bolder;
+}
+.container_para_content--sub {
+  font-weight: light;
+}
+.container_para .contact-form {
+  padding-top: 20px;
+  background: fixed rgba(0, 0, 0, 0.457);
+  background-size: cover;
+  border-radius: 6px;
+}
+.container_para input {
+  color: rgb(12, 55, 135);
+  cursor: text;
+}
+.container_para #textArea {
+  color: rgb(12, 55, 135);
+}
+.container_para #textArea:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.container_para .hyperlink {
+  font-size: larger;
+  text-decoration: none;
+  color: gainsboro;
+}
+.container_para .button-submit {
+  background-color: white;
+  border: 0.7px solid white;
+  color: black;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+/*# sourceMappingURL=contact.css.map */

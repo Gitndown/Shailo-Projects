@@ -1,0 +1,62 @@
+// FONTS
+$font: "Rubik", sans-serif;
+$cursor: pointer;
+
+// Colours //
+$colour-primary: lightblue;
+$colour-background: black;
+$colour-background-softer: rgba(0, 0, 0, 0.457);
+$colour-font: white;
+$colour-accent: cornflowerblue;
+$darker-font: rgb(12, 55, 135);
+$colour-hover: rebeccapurple;
+
+@mixin flex($flex, $justify, $align) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin soft-background {
+  background: fixed $colour-background-softer;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+// BUTTON //
+@mixin button {
+  background-color: transparent;
+  border: 0.7px solid $colour-font;
+  color: $colour-font;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+@mixin button-sub {
+  background-color: $colour-font;
+  border: 0.7px solid $colour-font;
+  color: $colour-background;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+// Animate
+
+@mixin animate {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+@mixin animate-button {
+  text-decoration: none;
+  color: $colour-font;
+  margin: 8px;
+  font-size: larger;
+  font-weight: bolder;
+  @include animate;
+  color: $colour-hover;
+}
+
+@mixin animate_button--empty {
+}
