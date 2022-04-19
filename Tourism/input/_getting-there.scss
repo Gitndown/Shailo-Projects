@@ -1,0 +1,54 @@
+// Getting There section
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#getting-there {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+
+  &__.container {
+    @include center;
+    flex-direction: column;
+  }
+}
+
+#getting-there .directions-items {
+  @include center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#getting-there .directions-item {
+  padding: 60px;
+  flex-basis: 50%;
+  background-color: transparent;
+  @include center;
+  flex-direction: column;
+}
+
+#getting-there .directions-item h1 {
+  font-size: 4rem;
+  font-weight: 500px;
+  text-align: center;
+}
+
+#getting-there .directions-item h3 {
+  font-size: 2rem;
+  font-weight: 500px;
+  text-align: center;
+}
+
+#getting-there .directions-items p {
+  padding-bottom: 10px;
+}
+
+// END of Getting There section

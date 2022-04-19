@@ -1,0 +1,67 @@
+// MEDIA QUERIES
+
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
+
+// tablets start
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cta {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+  }
+  h1.section title {
+    font-size: 6rem;
+  }
+
+  // hero
+  #top h1 {
+    font-size: 7rem;
+  }
+  // end hero
+
+  // sights
+
+  #sights .sights-bottom .sights-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+
+  // end of services.
+  // Gallery //
+  #gallery .gallery-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #gallery .all-gallery .gallery-info {
+    height: 100%;
+  }
+  #gallery .all-gallery .gallery-img {
+    height: 100%;
+  }
+
+  // end of gallery //
+}
+
+// tablet END
+// -------------------------------
+
+// Large Screens start
+// @media only screen and (min-width: 992px) and (max-width: 1199px) {
+//
+
+// tablet END

@@ -1,0 +1,69 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin lg-head-size {
+  font-size: 4rem;
+  font-weight: 500px;
+  text-align: center;
+}
+
+@mixin md-head-size {
+  font-size: 1.8rem;
+  font-weight: 500px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+$background-elements: linear-gradient(60deg, #461056d0 0%, #131d88d0 100%);
+$background-main: black;
+
+// Contact section //
+#contact .comtact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#contact .contact h1 {
+  margin-bottom: 50px;
+}
+#contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact .contact-item {
+  @include center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: linear-gradient(60deg, #17051dd0 0%, #050b4dd0 100%);
+}
+#contact .contact-item:hover {
+  background-image: linear-gradient(60deg, #461056d0 0%, #131d88d0 100%);
+}
+
+#contact .contact-info {
+  padding: 60px;
+  flex-basis: 50%;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact .contact-info h1 {
+  @include lg-head-size;
+}
+#contact .contact-info h2 {
+  @include md-head-size;
+}
+
+// End of contact section //
