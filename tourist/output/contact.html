@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Lost</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container_grid">
+      <div class="container_heading">
+        <div class="logo">
+          <h1>DESTINATION LOST</h1>
+        </div>
+      </div>
+      <!-- Logo -->
+
+      <!-- input - search bar -->
+      <div class="container_button">
+        <div>
+          <a href="Home.html" class="button">HOME</a>
+        </div>
+      </div>
+
+      <!-- Menu: -->
+      <!-- - Nature - Adventure - Relax - Culture -->
+      <div class="container_menu">
+        <nav>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <!-- <a href="relax.html">Relax</a> -->
+          <a href="getting-there.html">Getting there</a>
+        </nav>
+      </div>
+      <div class="container_para">
+        <div class="_para">
+          <h1 class="para-heading">Contact Us</h1>
+          <h3 class="_para-heading--sub">Are you looking to get lost?</h3>
+
+          <p>
+            Please use the form below to ask any questions you may have. We have
+            also included an <a href="faq.html" id="hyperlink">FAQ section</a>,
+            for any popular questions we may be able to answer for you? Want to
+            organise a special surprise for a loved one's birthday or perhaps a
+            proposal? Let us know and we will contact you back to discuss the
+            many options available.
+          </p>
+          <article class="contact-form">
+            <form action="https://formspree.io/f/xlezpzov" method="POST">
+              <!-- we can put any characters -->
+              <div>
+                <label for="name">Name:</label>
+                <!-- id - needs to be the same as the for attribute from label, links label with an input -->
+                <!-- name - used for form submission, input without name won't get sent to the backend -->
+                <input
+                  type="text"
+                  id="name"
+                  name="fullName"
+                  maxlength="10"
+                  placeholder="Please enter your name"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" required name="email" />
+              </div>
+              <br />
+              <label for="phone"> Phone number: </label>
+              <input
+                type="tel"
+                id="phone"
+                pattern="[0-9]{10}"
+                placeholder="04 xxxx xxxx"
+              />
+              <br />
+              <br />
+              <textarea
+                id="textArea"
+                placeholder="Please enter your enquiry here"
+                rows="5"
+                cols="40"
+                required
+              ></textarea>
+
+              <input type="reset" class="button-submit" />
+              <input type="submit" class="button-submit" />
+            </form>
+          </article>
+        </div>
+      </div>
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>

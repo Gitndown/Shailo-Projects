@@ -1,0 +1,135 @@
+@use "_media";
+@import "_colours";
+
+$font: "Rubik", sans-serif;
+
+@mixin border {
+  margin: 0.5px;
+  padding: 0.5px;
+}
+
+* {
+  font-family: $font;
+  color: $colour-font;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  padding-top: 3px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/starry-night.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  // background-color: $colour-background;
+}
+
+.container_grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25vw 1vw 44vw 30vw;
+  grid-template-rows: 10vh 8vh 84vh;
+  grid-template-areas:
+    "a a b b"
+    "c c c c"
+    "e e e e"
+    "f f f f";
+}
+
+.container_heading {
+  grid-area: a;
+  @include flex(flex, flex-start, center);
+}
+
+.container_button {
+  grid-area: b;
+  @include flex(flex, flex-start, center);
+  background-color: rgba(0, 0, 0, 0.921);
+  padding: 30px;
+}
+
+.button {
+  @include button;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: $colour-font;
+  margin: 8px;
+  font-size: large;
+  @include animate-button;
+}
+
+// -------------------
+//  NAV BAR //
+.container_menu {
+  grid-area: c;
+  @include flex(flex, center, center);
+  @include soft-background;
+
+  & a {
+    text-decoration: none;
+    color: $colour-font;
+    margin: 8px;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  & a:hover {
+    @include animate;
+    color: $colour-hover;
+  }
+}
+
+// -------------------
+// CONTACT SECTION //
+.container_para {
+  grid-area: e;
+  @include flex(flex, center, none);
+  text-align: center;
+  font-weight: lighter;
+
+  &_content {
+    text-align: center;
+
+    &__content-heading {
+      font-weight: bolder;
+    }
+
+    &--sub {
+      font-weight: light;
+    }
+  }
+
+  .contact-form {
+    padding-top: 20px;
+    @include soft-background;
+  }
+
+  input {
+    color: $darker-font;
+    cursor: text;
+  }
+
+  #textArea {
+    color: $darker-font;
+  }
+
+  .hyperlink {
+    font-size: larger;
+    text-decoration: none;
+    color: gainsboro;
+  }
+
+  .button-submit {
+    @include button-sub;
+  }
+
+  // ----------------
+  // FOOTER //
+}
